@@ -28,26 +28,37 @@ body {
     max-width: 800px;
     margin: 0 auto;
     color: white;
+    border: 2px solid #1b1c23;
+    background-color: #0d1117;
+    border-radius: 20px;
 }
 .faq-title {
     text-align: center;
     font-size: 40px;
+    margin-top: 100px;
     margin-bottom: 40px;
     animation: fadeIn 2s ease-in-out;
 }
 .faq-item {
-    margin-bottom: 30px;
+    border: 2px solid #1b1c23;
+    background-color: #0b0f14;
+    transition: all 0.5s ease;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 .faq-question {
     font-size: 24px;
     font-weight: bold;
     cursor: pointer;
-    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     animation: fadeIn 2s ease-in-out;
 }
 .faq-answer {
     font-size: 18px;
     display: none;
+    margin-top: 10px;
     line-height: 1.5;
     animation: fadeIn 2s ease-in-out;
 }

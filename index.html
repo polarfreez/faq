@@ -88,7 +88,7 @@
             item.addEventListener('click', () => {
                 const answer = item.nextElementSibling;
                 if (answer.style.maxHeight) {
-                    answer.style.maxHeight = 'none';
+                    answer.style.maxHeight = null;
                     item.classList.remove('active');
                 } else {
                     document.querySelectorAll('.faq-answer').forEach(ans => ans.style.maxHeight = null);

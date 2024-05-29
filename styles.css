@@ -46,6 +46,9 @@ body {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
 .faq-question {
     font-size: 24px;
@@ -54,11 +57,40 @@ body {
     margin-top: 5px;
     margin-bottom: 5px;
     animation: fadeIn 2s ease-in-out;
+    position: relative;
+    padding-right: 30px;
+}
+.faq-question::after {
+    content: '\f078';
+    font-family: "Font Awesome 5 Free"; 
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+.faq-question.active::after {
+    transform: translateY(-50%) rotate(180deg);
 }
 .faq-answer {
     font-size: 18px;
     display: none;
     margin-top: 10px;
     line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
     animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

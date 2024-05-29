@@ -1,0 +1,23 @@
+.faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.faq-question {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.faq-answer {
+  font-size: 18px;
+  line-height: 1.6;
+}

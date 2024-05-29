@@ -13,11 +13,9 @@ html {
 }
 
 body {
-  background-image: radial-gradient(
-    500px 200px at 50% 0,
-    #131f33 20%,
-    rgba(19, 30, 49, 0) 100%
-  );
+  background: rgb(16, 21, 29);
+  background-image: radial-gradient(500px 200px at 50% 0, #131f33 20%, rgba(19, 30, 49, 0) 100%);
+  background-size: cover;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: white;
   margin: 0 auto;

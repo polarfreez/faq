@@ -4,7 +4,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  transition: ease-in-out;
   scroll-behavior: smooth;
 }
 
@@ -75,7 +74,6 @@ body {
 }
 .faq-answer {
     font-size: 18px;
-    display: none;
     margin-top: 10px;
     line-height: 1.5;
     max-height: 0;
